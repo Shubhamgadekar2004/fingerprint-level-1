@@ -1,6 +1,17 @@
+# Core dependencies
 streamlit
-torch==2.3.0
-torchvision==0.18.0
 numpy
 pandas
 pillow
+
+# PyTorch and TorchVision (CRITICAL FIX)
+# Specify the exact versions you used during training, 
+# but use the links for the CPU version to ensure installation success.
+
+# Replace <VERSION> with your PyTorch version (e.g., 2.3.0)
+# Replace <TORCHVISION_VERSION> with your TorchVision version (e.g., 0.18.0)
+
+# Example for PyTorch 2.3.0 and TorchVision 0.18.0 (CPU, Python 3.10)
+# If this doesn't work, check the PyTorch installation page for your specific version/Python environment.
+torch @ https://download.pytorch.org/whl/cpu/torch-2.3.0%2Bcpu-cp310-cp310-linux_x86_64.whl
+torchvision @ https://download.pytorch.org/whl/cpu/torchvision-0.18.0%2Bcpu-cp310-cp310-linux_x86_64.whl
